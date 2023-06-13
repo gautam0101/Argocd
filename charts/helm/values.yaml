@@ -4,6 +4,7 @@ image:
   pullPolicy: IfNotPresent
   repository: 697593013958.dkr.ecr.ap-south-1.amazonaws.com/test_code
   version: main
+  
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
