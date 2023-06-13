@@ -1,0 +1,28 @@
+
+replicaCount: 3
+image:
+  pullPolicy: IfNotPresent
+  repository: 697593013958.dkr.ecr.ap-south-1.amazonaws.com/test_code
+  version: main
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+serviceAccount:
+  create: false
+  name:
+podSecurityContext: {}
+securityContext: {}
+service:
+  type: LoadBalancer
+  port: 80
+ingress:
+  enabled: false
+  annotations: {}
+  hosts:
+    - host: chart-example.local
+      paths: []
+  tls: []
+resources: {}
+nodeSelector: {}
+tolerations: []
+affinity: {}
